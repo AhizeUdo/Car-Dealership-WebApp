@@ -8,6 +8,13 @@ body {
     font-family: "Quicksand", sans-serif;  
 }
 
+.nav-container{
+    background-color: grey;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
 
 .NavWrapper nav{
     margin: 0;
@@ -25,7 +32,7 @@ body {
 .NavWrapper nav ul li a {
     text-decoration: none;
     display: block;
-    padding: 5px;
+    padding: 10px;
     color: black;
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;
@@ -40,19 +47,76 @@ body {
 }
 
 .HamburgerNav {
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(68, 68, 68);
+    right: 0;
 }
 
 .HamburgerNav ul{
     display: flex;
 }
 
-.HamburgerNav ul li a{
-    color: rgb(204, 204, 204);
+.HamburgerNav .hamburger-navbar-links ul li{
+    padding: 10px;
+    display: block;
 }
 
-.HamburgerNav ul li a:hover{
-    color: white;
+.HamburgerNav .hamburger-navbar-links ul li a{
+    color: black
+}
+
+.HamburgerNav .toggle-button{
+    height: 45px;
+    width: 65px;
+    background-image: url(/img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    right: 0;
+    top: .75rem;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .HamburgerNav{
+        opacity: 0.6;
+    }
+    .HamburgerNav .toggle-button{
+        display: flex;
+    }
+
+    .HamburgerNav .hamburger-navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .HamburgerNav nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .HamburgerNav .hamburger-navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .HamburgerNav .hamburger-navbar-links li {
+        text-align: center;
+    }
+    .HamburgerNav .hamburger-navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .HamburgerNav .hamburger-navbar-links ul li a{
+        color: black;
+    }
+    .HamburgerNav .hamburger-navbar-links ul li a:hover{
+        color: white;
+    }
+    .hamburger-navbar-links.active{
+        display: flex;
+    }
 }
