@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;  
+}
+
+
+.NavWrapper nav{
+    margin: 0;
+    padding: 0;
+}
+
+.NavWrapper nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.NavWrapper nav ul li{
+    list-style: none;
+}
+.NavWrapper nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.NavWrapper .BrandLogo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.HamburgerNav {
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(68, 68, 68);
+}
+
+.HamburgerNav ul{
+    display: flex;
+}
+
+.HamburgerNav ul li a{
+    color: rgb(204, 204, 204);
+}
+
+.HamburgerNav ul li a:hover{
+    color: white;
+}
