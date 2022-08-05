@@ -152,6 +152,14 @@ body {
         font-weight: 900;
         width: 350px;
     }
+    .body-section .Home-Video{
+        top: 0;
+        left: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100px;
+        position: absolute;
+    }
 }
 
 section{
