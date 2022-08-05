@@ -15,6 +15,7 @@ body {
     left: 0;
     right: 0;
     position: fixed;
+    z-index: 2;
 }
 
 .NavWrapper nav{
@@ -86,7 +87,6 @@ body {
     right: 0;
     top: .75rem;
     flex-direction: column;
-    border-radius: 10px;
 }
 
 @media (max-width: 1000px) {
@@ -128,6 +128,28 @@ body {
     .hamburger-navbar-links.active{
         display: flex;
     }
+
+    .body-section{
+        top: 50px;
+    }
+
+    .body-section .TextSection{
+        top: 400px;
+        bottom: 0;
+    }
+    .body-section .TextSection h1{
+        font-family: "QuickSand" sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        color: white;
+    }
+    .body-section .TextSection p{
+        font-family: "QuickSand" sans-serif;
+        font-size: 54px;
+        color: white;
+        font-weight: 900;
+        width: 550px;
+    }
 }
 
 section{
@@ -136,19 +158,51 @@ section{
 }
 
 .body-section{
+    top: 600px;
     margin: 0;
     padding: 0;
 }
 
-#Home-Video {
+.Home-Video {
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
+    background: black;
+    z-index: 1; 
+    opacity: 0.55;
+    position: fixed;
     min-width: 100%;
     min-height: 100%;
 }
 
 .TextSection {
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     width: 100%;
+    z-index: 2;
+}
+
+.TextSection h1{
+    font-family: "QuickSand" sans-serif;
+    font-size: 41px;
+    font-weight: 600;
+    color: white;
+}
+
+.TextSection p{
+    font-family: "QuickSand" sans-serif;
+    font-size: 114px;
+    color: white;
+    font-weight: 900;
+    width: 850px;
 }
