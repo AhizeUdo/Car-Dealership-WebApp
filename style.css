@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Quicksand", sans-serif;  
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .nav-container{
@@ -133,14 +133,16 @@ body {
         top: 50px;
     }
 
+
     .body-section .TextSection{
-        top: 400px;
+        top: 450px;
         bottom: 0;
+
     }
     .body-section .TextSection h1{
         font-family: "QuickSand" sans-serif;
-        font-size: 21px;
-        font-weight: 500;
+        font-size: 31px;
+        font-weight: 600;
         color: white;
     }
     .body-section .TextSection p{
@@ -148,7 +150,7 @@ body {
         font-size: 54px;
         color: white;
         font-weight: 900;
-        width: 550px;
+        width: 350px;
     }
 }
 
