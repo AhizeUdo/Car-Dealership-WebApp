@@ -6,15 +6,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Quicksand", sans-serif;  
+    /* overflow-x: hidden; */
 }
 
 .nav-container{
-    background-color: grey;
+    background-color:  black;
+    opacity: 0.8;
     left: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
 }
-
 
 .NavWrapper nav{
     margin: 0;
@@ -28,14 +29,15 @@ body {
 
 .NavWrapper nav ul li{
     top: .75rem;
-    padding: 10px;
+    padding: 9px;
     list-style: none;
 }
+
 .NavWrapper nav ul li a {
     text-decoration: none;
     display: block;
     padding: 10px;
-    color: black;
+    color: white;
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
@@ -43,8 +45,9 @@ body {
 }
 
 .NavWrapper .BrandLogo{
+    right: 0;
     background-image: url(/img/Logo.png);
-    height: 50px;
+    height: 40px;
     width: 150px;
     background-position: center;
     background-size: cover;
@@ -65,13 +68,14 @@ body {
 }
 
 .HamburgerNav .hamburger-navbar-links ul li a{
-    color: black
+    color: white;
+    cursor: pointer;
 }
 
 .HamburgerNav .toggle-button{
     height: 45px;
     width: 65px;
-    background-image: url(/img/menu.png);
+    background-image: url(/img/hamburgermenu.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -87,7 +91,7 @@ body {
 
 @media (max-width: 1000px) {
     .HamburgerNav{
-        opacity: 0.6;
+        opacity: 0.5;
     }
     .HamburgerNav .toggle-button{
         display: flex;
@@ -116,7 +120,7 @@ body {
     }
 
     .HamburgerNav .hamburger-navbar-links ul li a{
-        color: black;
+        color: white;
     }
     .HamburgerNav .hamburger-navbar-links ul li a:hover{
         color: white;
@@ -124,4 +128,27 @@ body {
     .hamburger-navbar-links.active{
         display: flex;
     }
+}
+
+section{
+    margin: 0;
+    padding: 0;
+}
+
+.body-section{
+    margin: 0;
+    padding: 0;
+}
+
+#Home-Video {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.TextSection {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
