@@ -9,6 +9,11 @@ body {
     overflow-x: hidden;
 }
 
+.packet{
+    height: 300vh;
+    /* position: relative; */
+}
+
 .nav-container{
     background-color:  black;
     opacity: 0.8;
@@ -129,30 +134,30 @@ body {
         display: flex;
     }
 
-    .body-section{
+    .bodysection-firstsection{
         top: 50px;
     }
 
 
-    .body-section .TextSection{
+    .bodysection-firstsection .TextSection{
         top: 450px;
         bottom: 0;
 
     }
-    .body-section .TextSection h1{
+    .bodysection-firstsection .TextSection h1{
         font-family: "QuickSand" sans-serif;
         font-size: 31px;
         font-weight: 600;
         color: white;
     }
-    .body-section .TextSection p{
+    .bodysection-firstsection .TextSection p{
         font-family: "QuickSand" sans-serif;
         font-size: 54px;
         color: white;
         font-weight: 900;
         width: 350px;
     }
-    .body-section .Home-Video{
+    .bodysection-firstsection .Home-Video{
         top: 0;
         left: 0;
         right: 0;
@@ -162,18 +167,22 @@ body {
     }
 }
 
-.body-section{
+.bodysection-firstsection{
     margin: 0;
     padding: 0;
+    left: 0;
+    right: 0;
+    position: relative;
 }
+
 
 .Home-Video {
     top: 0;
     left: 0;
     right: 0;
     min-width: 100%;
-    min-height: 45%;
-    position: absolute;
+    min-height: 100%;
+    position: relative;
 }
 
 .overlay {
@@ -185,7 +194,6 @@ body {
     z-index: 1; 
     opacity: 0.55;
     position: absolute;
-    height: 71.1rem ;
     min-height: 100%;
     min-width: 100%;
  
@@ -221,20 +229,32 @@ body {
     
 }
 
-.bodysection-secondsection .card{
-    background-color: black;
+.bodysection-secondsection {
+    background-color: rgb(178, 169, 169);
     width: 100%;
     margin: 0;
     padding: 0;
     height: 40rem;
-    top: 71.19rem;
-    position: relative; 
-    padding: 10px;
-    
+    /* top: 71.20rem; */
+    left: 0;
+    right: 0;
+    position: relative;     
+}
+
+.bodysection-secondsection ul {
+    display: flex;
+    left: 0;
+    right: 0;
+
+}
+
+.bodysection-secondsection ul li {
+    display: block;
 }
 
 .bodysection-secondsection .one{
     font-size: 52px;
     color: white;
-    
+    width: 50%; 
 }
+
