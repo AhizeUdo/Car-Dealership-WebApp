@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+section{
+    position: relative;
+}
+
 .packet{
     height: 300vh;
     /* position: relative; */
@@ -167,12 +171,19 @@ body {
     }
 }
 
+
+
 .bodysection-firstsection{
     margin: 0;
     padding: 0;
     left: 0;
     right: 0;
     position: relative;
+}
+
+.bodysection-firstsection .body-section{
+    position: relative;
+    padding: 0;
 }
 
 
@@ -221,40 +232,59 @@ body {
     width: 850px;
 }
 
-.bodysection-secondsection{
-    /* background-image: url(/img/bodysectiontwoimg1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    
+.bodysectionWrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 30;
 }
 
 .bodysection-secondsection {
-    background-color: rgb(178, 169, 169);
-    width: 100%;
+    background-color: black;
     margin: 0;
     padding: 0;
-    height: 40rem;
+    width: 100%;
+    height: 61rem;
+    left: 0px;
     /* top: 71.20rem; */
-    left: 0;
-    right: 0;
-    position: relative;     
+    position: absolute;     
 }
 
 .bodysection-secondsection ul {
     display: flex;
-    left: 0;
-    right: 0;
-
 }
 
 .bodysection-secondsection ul li {
+    margin-top: 30px;
     display: block;
+    padding: 10px;
 }
 
 .bodysection-secondsection .one{
     font-size: 52px;
     color: white;
-    width: 50%; 
+}
+
+.bodysection-secondsection p{
+    font-size: 25px;
+    color: white;
+}
+
+.bodysection-secondsection .secondsectionimg{
+    background-image: url(/img/kindpng_3838228.png);
+    height: 38em;
+    bottom: 250px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bodysection-secondsectiontwin{
+    background-color: yellow;
+    height: 50rem;
+    position: absolute;
 }
 
