@@ -277,6 +277,7 @@ section{
 .bodysection-secondsection .secondsectionimg{
     background-image: url(/img/kindpng_3838228.png);
     height: 38em;
+    width: 100%;
     bottom: 250px;
     position: relative;
     background-position: center;
@@ -294,24 +295,25 @@ section{
     display: flex;
 }
 
-.bodysection-secondsectiontwin ul li .secondsectionimgtwo{
-    background-image: url(/img/twinimgtwo.png);
+.bodysection-secondsectiontwin .secondsectionimgtwo{
+    background-image: url(/img/Mclaren-PNG-Photo-Image.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    position: absolute;
+    background-size: contain;
+    position: relative;
     height: 38rem;
 }
 
-.bodysection-secondsectiontwin ul li{
-    display: inline-block;
-    list-style: none;
-    padding: 10px;
-}
-
-.bodysection-secondsectiontwin ul li p{
+.bodysectionWrapper .bodysection-secondsectiontwin  p{
     padding: 10px;
     color: white;
+    font-size: 27px;
+}
+
+.bodysectionWrapper  .bodysection-secondsectiontwin h1{
+    font-size: 90px;
+    color: white;
+    padding: 50px;
 }
 
 
