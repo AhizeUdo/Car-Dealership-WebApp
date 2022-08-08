@@ -16,6 +16,7 @@ section{
 .packet{
     height: 300vh;
     /* position: relative; */
+    background-color: black;
 }
 
 .nav-container{
@@ -249,7 +250,7 @@ section{
     height: 61rem;
     left: 0px;
     /* top: 71.20rem; */
-    position: absolute;     
+    position: relative;     
 }
 
 .bodysection-secondsection ul {
@@ -260,6 +261,7 @@ section{
     margin-top: 30px;
     display: block;
     padding: 10px;
+    list-style: none;
 }
 
 .bodysection-secondsection .one{
@@ -283,8 +285,33 @@ section{
 }
 
 .bodysection-secondsectiontwin{
-    background-color: yellow;
+    background-color: black;
     height: 50rem;
     position: absolute;
 }
+
+.bodysection-secondsectiontwin ul {
+    display: flex;
+}
+
+.bodysection-secondsectiontwin ul li .secondsectionimgtwo{
+    background-image: url(/img/twinimgtwo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 38rem;
+}
+
+.bodysection-secondsectiontwin ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+
+.bodysection-secondsectiontwin ul li p{
+    padding: 10px;
+    color: white;
+}
+
 
