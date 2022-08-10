@@ -317,5 +317,8 @@ section{
     padding: 50px;
 }
 
-
+.bodysectionWrapper .footersesction{
+    background-color: white;
+    position: absolute;
+}
 
