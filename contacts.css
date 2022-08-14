@@ -1,0 +1,23 @@
+.containercontacts{
+    background-image: url(/img/contactsPage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    margin-left: 0;
+}
+
+.containercontacts .infocontacts{
+    position: relative;
+    top: 10rem;
+    align-items: center;
+}
+
+.containercontacts .infocontacts h1{
+    text-align: center;
+    font-family: 'QuickSand' sans-serif;
+    color: white;
+}

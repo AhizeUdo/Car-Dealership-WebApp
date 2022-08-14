@@ -14,9 +14,9 @@ section{
 }
 
 .packet{
-    height: 350vh;
+    height: 470vh;
     /* width: 100%; */
-    /* position: relative; */
+    position: relative;
     background-color: black;
 }
 
@@ -43,6 +43,8 @@ section{
     top: .75rem;
     padding: 9px;
     list-style: none;
+    position: relative;
+    display: inline-block;
 }
 
 .NavWrapper nav ul li a {
@@ -66,8 +68,131 @@ section{
     background-repeat: no-repeat;
 }
 
+.NavWrapper .dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 160px;
+    height: 25em;
+    width: 100vw;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(250, 250, 250, 0.603);
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    top: 5em;
+}
+.NavWrapper .dropdown-content .dropdownimgGT{
+    background-image: url(/img/GT.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    width: 490px;
+    padding: q5rem;
+}
+
+
+/* .NavWrapper .dropdown .dropdown-content .BespokeModel{
+    position: absolute;
+} */
+
+.NavWrapper .dropdown .dropdown-content .BespokeModel ul{
+    display: flex;
+    padding: 2.5rem;
+}
+
+.NavWrapper .dropdown .dropdown-content .BespokeModel ul li{
+    padding: 5px 100px 20px 10px;
+}
+
+.NavWrapper .dropdown-content .BespokeModel ul .dropdownimgP1{
+    background-image: url(/img/P1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 230px;
+    width: 400px;
+}
+
+.NavWrapper .dropdown-content .BespokeModel ul .dropdownimgbespoke1{
+    background-image: url(/img/bespokeone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 230px;
+    width: 400px;
+}
+
+.NavWrapper .dropdown-content .BespokeModel ul .dropdownimgbespoke2{
+    background-image: url(/img/bespoke3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 450px;
+}
+
+.NavWrapper .dropdown-content .SuperModel ul .dropdownimgbespoke2{
+    background-image: url(/img/bespoke3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 400px;
+}
+
+.NavWrapper .dropdown-content .SuperModel ul .dropdownimgP1{
+    background-image: url(/img/hypertwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 380px;
+}
+
+.NavWrapper .dropdown-content .SuperModel ul .dropdownimgbespoke1{
+    background-image: url(/img/hyper3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 380px;
+}
+
+.NavWrapper .dropdown-content .HyperModel ul .dropdownimgbespoke1{
+    background-image: url(/img/McLaren-Speedtail-Albert-2021-5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 299px;
+    width: 409px;
+}
+
+.NavWrapper .dropdown-content .HyperModel ul .dropdownimgP1{
+    background-image: url(/img/hypertwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 400px;
+}
+
+.NavWrapper .dropdown-content .HyperModel ul .dropdownimgbespoke2{
+    background-image: url(/img/McLaren-Elva-2021-6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 400px;
+}
+
+
 .HamburgerNav {
     right: 0;
+    position: relative;
 }
 
 .HamburgerNav ul{
@@ -82,6 +207,7 @@ section{
 .HamburgerNav .hamburger-navbar-links ul li a{
     color: white;
     cursor: pointer;
+    right: 0;
 }
 
 .HamburgerNav .toggle-button{
@@ -174,7 +300,6 @@ section{
 }
 
 
-
 .bodysection-firstsection{
     margin: 0;
     padding: 0;
@@ -222,7 +347,7 @@ section{
 .TextSection h1{
     font-family: "QuickSand" sans-serif;
     font-size: 41px;
-    font-weight: 600;
+    font-weight: 200;
     color: white;
 }
 
@@ -230,7 +355,7 @@ section{
     font-family: "QuickSand" sans-serif;
     font-size: 114px;
     color: white;
-    font-weight: 900;
+    font-weight: 200;
     width: 850px;
 }
 
@@ -317,8 +442,96 @@ section{
     padding: 50px;
 }
 
-.bodysectionWrapper .footerSesction{
-    background-color: white;
-    position: absolute;
+.bodysectionWrapper .footerSection{
+    /* background-color: white; */
+    position: relative;
+    top: 85em;
 }
+
+.bodysectionWrapper .footerSection .firstfootersection{
+    height: 49rem;
+    padding: 12em;
+    width: 100%;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(/img/footersection.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bodysectionWrapper .footerSection h2{
+    color: white;
+    font-family: "QuickSand" sans-serif;
+    font-size: 85px;
+}
+
+.bodysectionWrapper .footerSection p{
+    color: white;
+    font-family: "QuickSand" sans-serif;
+    font-size: 40px;
+}
+
+.bodysectionWrapper .footerSection button{
+    color: black;
+    border-radius: 10px;
+    height: 2.5em;
+    width: 5em;
+} 
+
+.bodysectionWrapper .footerSection .secondfootersection{
+    padding: 6em;
+    background-color: black;
+    position: absolute;
+    top: 35em;
+    height: 29em;
+    width: 100%;
+}
+
+.bodysectionWrapper .footerSection .secondfootersection-secondpart{
+    background-image: linear-gradient(black, rgb(61, 61, 61), black, black);
+}
+
+
+.bodysectionWrapper .footerSection .secondfootersection ul{
+    padding: 1em;
+}
+
+.bodysectionWrapper .footerSection .secondfootersection ul li{
+    color: white;
+    font-size: 29px;
+    list-style: none;
+    padding: 0.5em;
+}
+
+.bodysectionWrapper .footerSection .secondfootersection-secondpart ul .followus{
+    color: white;
+    font-size: 42px;
+    padding: 0.5em;
+}
+
+.bodysectionWrapper .footerSection .secondfootersection-secondpart ul .Instagram{
+    background-image: url(/img/instagram.png);
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bodysectionWrapper .footerSection .secondfootersection-secondpart ul .Facebook{
+    background-image: url(/img/facebook.png);
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bodysectionWrapper .footerSection .secondfootersection-secondpart ul .Whatsapp{
+    background-image: url(/img/whatsapp.png);
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
