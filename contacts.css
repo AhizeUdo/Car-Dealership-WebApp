@@ -47,3 +47,21 @@
 .containercontacts .infocontacts input{
     color: black;
 }
+
+.containercontacts .infocontacts .emailinput{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.containercontacts .infocontacts .emailinput-mutedtext{
+    text-align: center;
+    color: white;
+    font-family: "QuickSand" sans-serif;
+}
+
+.containercontacts .infocontacts .emailinputmutedtext{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
