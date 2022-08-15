@@ -1,5 +1,5 @@
 .containercontacts{
-    background-image: url(/img/contactsPage.jpg);
+    background-image: url(/img/contactsPagetwo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +12,7 @@
 
 .containercontacts .infocontacts{
     position: relative;
-    top: 10rem;
+    top: 20rem;
     align-items: center;
 }
 
@@ -20,4 +20,48 @@
     text-align: center;
     font-family: 'QuickSand' sans-serif;
     color: white;
+}
+
+.containercontacts .infocontacts .syncdriveh1{
+    text-align: center;
+    font-family: 'QuickSand' sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.containercontacts .infocontacts p{
+    text-align: center;
+    font-family: 'QuickSand' sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.containercontacts .infocontacts h2{
+    text-align: center;
+    font-family: 'QuickSand' sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.containercontacts .infocontacts input{
+    color: black;
+}
+
+.containercontacts .infocontacts .emailinput{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.containercontacts .infocontacts .emailinput-mutedtext{
+    text-align: center;
+    color: white;
+    font-family: "QuickSand" sans-serif;
+}
+
+.containercontacts .infocontacts .emailinputmutedtext{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
 }
